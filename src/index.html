@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/assets/styles.css">
+    <link rel="stylesheet" href="../src/scss/main.scss">
+    <link href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
+        defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,900;0,1000;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>TL-02</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titre" class="animate__animated animate__pulse">Stereo</h1>
+        <img class="animate__animated animate__flip" id="logo" src="../src/assets/img/logo.png" alt="logo de Stereo">
+    </header>
+    <main>
+        <h2 class="animate__animated animate__heartBeat animate__slower" id="sousTitre">Welcome home</h2>
+        <p>Depuis maintenant près de 25 ans, Stereo est le afterhour le plus connu de Montréal et est renommé
+            mondialement pour sa qualité de sonore</p>
+        <h2 class="wow slideInRight" id="sousTitre" data-wow-duration="2s" data-wow-delay="1s" id="sousTitre">Horaire
+        </h2>
+        <p id="heure">Stereo- Vendredi et Samedi :12am à 9am</p>
+        <p id="heure">Stereobar- Vendredi et Samedi :10pm à 3am</p>
+        <h2 class="wow slideInRight" id="sousTitre" data-wow-duration="2s" data-wow-delay="1s">Événements</h2>
+        <div class="container my-5">
+            <div class="row text-align-center">
+                <div class="col-12 col-md-6">
+                    <section id="card1">
+                        <h3 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">John Doe</h3>
+                        <div class="card" style="width: 10rem justify-content-center;">
+                            <img src="../src/assets/img/Frame 1.png" class="card-img-top"
+                                alt="Billet spectacle de John Doe">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-dark">Billet</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section id="card2">
+                        <h3 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">Jane Doe</h3>
+                        <div class="card " style="width: 10rem justify-content-center;">
+                            <img src="../src/assets/img/Frame 2.png" class="card-img-top"
+                                alt="Billet spectacle de Jane Doe">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-dark">Billet</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <h2 id="sousTitre">Nous sommes situés dans le quartier gay de Montréal</h2>
+                <figure class="wow bounceInUp">
+                    <img id="quartierGay" src="../src/assets/img/quartier.jpg" alt="photo du quartier gay">
+                    <figcaption>Le quartier gay de Montréal</figcaption>
+                </figure>
+                <div class="svgChart" style="padding: 15px">
+                    <div style="width: 100%; height: 300px" id="chart-container"></div>
+                    <div class="wow slideInDown" id="groupeBtn">
+                        <div class="lienBtn">
+                            <a href="https://www.tripadvisor.ca/ShowUserReviews-g155032-d605431-r557621474-Stereo_Nightclub-Montreal_Quebec.html"
+                                class="btn btn-dark">Note Tripadvisor</a>
+                        </div>
+                        <div class="lienBtn">
+                            <a href="https://www.facebook.com/stereobarmontreal/?locale=fr_CA" class="btn btn-dark">Note
+                                Facebook</a>
+                        </div>
+                        <div class="lienBtn">
+                            <a href="https://www.google.com/search?q=stereo+bar&rlz=1C1GCEA_enCA992CA992&oq=stereo+bar&aqs=chrome.0.0i355i512j46i175i199i512j0i512l3.2992j0j7&sourceid=chrome&ie=UTF-8"
+                                class="btn btn-dark">Google</a>
+                        </div>
+                        <canvas id="canvas" width="200" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="gridF">
+        
+        <ul class="listeFooter2">
+            <li>
+                <a href="https://google.com/" class="a">À notre sujet</a>
+                <img src="./assets/img/icons/chevron-compact-down.svg" alt="chevron vers le bas" class="chevronB">
+            </li>
+            <hr>
+            <li>
+                <a href="https://google.com/" class="a">S'inscrire à l'infolettre</a>
+                <img src="./assets/img//icons/chevron-compact-down.svg" alt="chevron vers le bas" class="chevronB">
+            </li>
+            <hr>
+        </ul>
+
+        <div class="linkReseau">
+            <p>Nous suivre</p>
+            <div class="logoReseau">
+                <a href="https://google.com/">
+                    <img class="logoFb" src="./assets/img/icons/facebook.svg" aria-label="Logo menant a Facebook">
+                </a>
+                <a href="https://google.com/">
+                    <img class="logoInsta" src="./assets/img/icons/instagram.svg" aria-label="Logo menant a Instagram">
+                </a>
+                <a href="https://google.com/">
+                    <img class="logoYt" src="./assets/img/icons/youtube.svg" aria-label="Logo menant a Youtube">
+                </a>
+                <a href="https://google.com/">
+                    <img class="logoTwitter" src="./assets/img/icons/twitter.svg" aria-label="Logo menant Twitter">
+                </a>
+            </div>
+            <div class="boxCourriel">
+                <p>S'inscrire à notre infolettre</p>
+                <a href="https://google.com/">
+                    <img src="./assets/img//icons/courrriel.svg" alt="boite pour inscrire le courriel" class="boxCourriel">
+                </a>
+            </div>
+        </div>
+        <div class="condition1">
+            <p><a href="https://google.com/" class="a">Politique de confidentialité</a></p>
+            <p><a href="https://hardcandy.com/" class="a">Témoins</a></p>
+        </div>
+        <div class="condition2">
+            <p><a href="https://google.com/" class="a">Avis juridique</a></p>
+            <p><a href="https://google.com/" class="a">Conditions d'utilisation</a></p>
+        </div>
+        <div class="condition3">
+            <p><a href="https://google.com/" class="a">Accessibilité</a></p>
+            <p><a href="https://google.com/" class="a">Paramètres des témoins</a></p>
+        </div>
+        <div class="paraCondition">
+            Copyright © 2023, Marie-Jeanne Drouin. Le club Stereo est utilisée en contexte scolaire. Le logo et ces informations sont purement fictifs.
+            Droits d'auteur de Marie-Jeanne Drouin dans le cadre de ses études en PMI. Tous droits
+            réservés. L’utilisation de ce site implique que vous en acceptez les conditions générales d’utilisation.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+    <script src="../src/assets/scripts/wow.js"></script>
+    <script src="../src/assets/scripts/RGraph.svg.bar.js"></script>
+    <script src="../src/assets/scripts/RGraph.svg.common.core.js"></script>
+    <script src="../src/assets/scripts/canvas.js"></script>
+    <script type="module" src="../src/assets/scripts/main.js"></script>
+</body>
+
+</html>
